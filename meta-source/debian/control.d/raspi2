@@ -1,34 +1,34 @@
-Package: linux-headers-bcm2709
+Package: linux-headers-raspi2
 Architecture: armhf
 Section: metapackages
 Priority: optional
-Depends: ${misc:Depends}, linux-headers-${kernel-abi-version}-generic-bcm2709 
+Depends: ${misc:Depends}, linux-headers-${kernel-abi-version}-generic-raspi2 
 Description: Linux kernel headers for the BCM2709 architecture.
  This package will always depend on the latest kernel headers available
  for ARM BCM2709 systems.
 
-Package: linux-image-bcm2709
+Package: linux-image-raspi2
 Architecture: armhf
 Section: metapackages
 Priority: optional
-Depends: ${misc:Depends}, linux-image-${kernel-abi-version}-generic-bcm2709, linux-firmware
+Depends: ${misc:Depends}, linux-image-${kernel-abi-version}-generic-raspi2, linux-firmware
 Description: Linux kernel image for the BCM2709 architecture.
  This package will always depend on the latest kernel image available
  for ARM BCM2709 systems.
 
-Package: linux-bcm2709
+Package: linux-raspi2
 Architecture: armhf
 Section: metapackages
 Priority: optional
-Depends: ${misc:Depends}, linux-image-bcm2709 (= ${binary:Version}), linux-headers-bcm2709 (= ${binary:Version})
+Depends: ${misc:Depends}, linux-image-raspi2 (= ${binary:Version}), linux-headers-raspi2 (= ${binary:Version})
 Description: Complete Linux kernel for the BCM2709 architecture.
  This package will always depend on the latest complete Linux kernel available
  for ARM BCM2709 systems.
 
-Package: linux-tools-bcm2709
+Package: linux-tools-raspi2
 Architecture: armhf
 Section: metapackages
-Depends: ${misc:Depends}, linux-tools-${kernel-abi-version}-generic-bcm2709
+Depends: ${misc:Depends}, linux-tools-${kernel-abi-version}-generic-raspi2
 Description: Linux kernel versioned Tools.
  This package will always depend on the latest Linux kernel versioned tools
  available for ARM BCM2709 systems. The Ubuntu patches have been applied.

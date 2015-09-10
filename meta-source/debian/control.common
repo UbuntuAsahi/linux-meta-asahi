@@ -1,10 +1,10 @@
-Source: linux-meta-bcm2709
+Source: linux-meta-raspi2
 Section: devel
 Priority: optional
 Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
 Standards-Version: 3.6.1
 Build-Depends: dpkg (>= 1.13.19), debhelper (>= 5), gawk
-Vcs-Git: http://kernel.ubuntu.com/git-repos/ppisati/ubuntu-RELEASE_NAME-meta.git bcm2709
+Vcs-Git: http://kernel.ubuntu.com/git-repos/ppisati/ubuntu-RELEASE_NAME-meta.git raspi2
 
 #Package: linux-source
 #Architecture: all
