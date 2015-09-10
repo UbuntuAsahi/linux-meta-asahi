@@ -1,31 +1,16 @@
-Source: linux-meta@SUFFIX@
+Source: linux-meta-bcm2709
 Section: devel
 Priority: optional
 Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
 Standards-Version: 3.6.1
 Build-Depends: dpkg (>= 1.13.19), debhelper (>= 5), gawk
-Vcs-Git: git://git.launchpad.net/~ubuntu-kernel/ubuntu/+source/linux-meta/+git/@SERIES@
+Vcs-Git: http://kernel.ubuntu.com/git-repos/ppisati/ubuntu-RELEASE_NAME-meta.git bcm2709
 
-Package: linux-source@SUFFIX@
-Architecture: all
-Section: devel
-Priority: optional
-Depends: ${misc:Depends}, linux-source-${kernel-version}
-Description: Linux kernel source with Ubuntu patches
- This package will always depend on the latest Linux kernel source code
- available. The Ubuntu patches have been applied.
-
-Package: linux-crashdump@SUFFIX@
-Architecture: i386 amd64 ppc64el
-Section: devel
-Depends: ${misc:Depends}, kdump-tools, grub-pc (>= 1.96+20090611-1ubuntu2) [i386 amd64] | grub-efi-ia32 [i386 amd64] | grub-efi-amd64 [i386 amd64] | grub (>= 0.97-29ubuntu24) [i386 amd64]
-Recommends: apport
-Suggests: crash
-Description: Linux kernel crashdump setup for the latest generic kernel
- This package installs all the needed infrastructure to get crashdumps from
- your running system. If you are experiencing kernel crashes that cannot
- be debugged normally (because the problem is infrequent or panic's the
- system in such a way as to make information gathering impossible), then
- you can install this package to automatically enable capture of the
- vmcore on crashes.
-
+#Package: linux-source
+#Architecture: all
+#Section: devel
+#Priority: optional
+#Depends: ${misc:Depends}, linux-source-${kernel-version}
+#Description: Linux kernel source with Ubuntu patches
+# This package will always depend on the latest Linux kernel source code
+# available. The Ubuntu patches have been applied.
