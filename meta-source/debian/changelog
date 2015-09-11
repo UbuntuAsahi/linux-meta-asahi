@@ -1,3 +1,9 @@
+linux-meta-raspi2 (4.2.0.1008.8) wily; urgency=medium
+
+  * linux-image-raspi2 ABI 8
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 11 Sep 2015 10:21:54 -0600
+
 linux-meta-raspi2 (4.2.0.1007.7) wily; urgency=medium
 
   * linux-image-raspi2 ABI 7
