@@ -1,3 +1,9 @@
+linux-meta-raspi2 (4.2.0.1008.9) wily; urgency=medium
+
+  * Remove -generic from package name dependencies.
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 14 Sep 2015 08:02:46 -0600
+
 linux-meta-raspi2 (4.2.0.1008.8) wily; urgency=medium
 
   * linux-image-raspi2 ABI 8
