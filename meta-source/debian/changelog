@@ -1,3 +1,9 @@
+linux-meta-raspi2 (4.2.0.1008.10) wily; urgency=medium
+
+  * Drop references to tools and source packages.
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Wed, 23 Sep 2015 07:38:52 -0600
+
 linux-meta-raspi2 (4.2.0.1008.9) wily; urgency=medium
 
   * Remove -generic from package name dependencies.
