@@ -1,3 +1,9 @@
+linux-meta-raspi2 (4.2.0.1008.12) wily; urgency=medium
+
+  * Fix Vcs-Git URL 
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 24 Sep 2015 12:44:07 -0600
+
 linux-meta-raspi2 (4.2.0.1008.11) wily; urgency=medium
 
   * Revert "UBUNTU: Drop tools and source package dependencies" 
