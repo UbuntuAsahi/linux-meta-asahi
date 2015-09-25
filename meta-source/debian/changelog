@@ -1,3 +1,9 @@
+linux-meta-raspi2 (4.2.0.1009.13) wily; urgency=medium
+
+  * linux-image-raspi2 ABI 9
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 25 Sep 2015 10:34:27 -0600
+
 linux-meta-raspi2 (4.2.0.1008.12) wily; urgency=medium
 
   * Fix Vcs-Git URL 
