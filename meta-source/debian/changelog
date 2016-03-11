@@ -1,3 +1,9 @@
+linux-meta-raspi2 (4.4.0.1004.4) xenial; urgency=medium
+
+  * linux-image-raspi2 ABI 1004
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 11 Mar 2016 13:36:57 -0700
+
 linux-meta-raspi2 (4.4.0.1003.3) xenial; urgency=medium
 
   * linux-image-raspi2 ABI 1003
