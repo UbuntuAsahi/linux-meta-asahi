@@ -59,7 +59,7 @@ debian/control: $(control_files)
 install: build
 	dh_testdir
 	dh_testroot
-	dh_clean -k
+	dh_prep
 
 gencontrol_flags = -Vkernel-version=$(KERNEL_VERSION)
 gencontrol_flags += -Vkernel-abi-version=$(KERNEL_ABI_VERSION)
