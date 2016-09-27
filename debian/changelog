@@ -1,3 +1,9 @@
+linux-meta-raspi2 (4.8.0.1009.11) yakkety; urgency=medium
+
+  * Bump ABI 4.8.0-1009
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 27 Sep 2016 08:41:08 -0600
+
 linux-meta-raspi2 (4.8.0.1008.10) yakkety; urgency=medium
 
   * Bump ABI 4.8.0-1008
