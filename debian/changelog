@@ -1,3 +1,10 @@
+linux-meta-raspi2 (4.8.0.1013.16) yakkety; urgency=medium
+
+  * Enable the arm64 arch on Raspberry Pi (LP: #1628124)
+    arm64 support was enabled in the kernel as of 4.8.0-1009.11
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 11 Oct 2016 09:15:10 -0600
+
 linux-meta-raspi2 (4.8.0.1013.15) yakkety; urgency=medium
 
   * Bump ABI 4.8.0-1013
