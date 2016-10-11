@@ -1,5 +1,5 @@
 Package: linux-headers-raspi2
-Architecture: armhf
+Architecture: armhf arm64
 Section: kernel
 Depends: ${misc:Depends}, linux-headers-${kernel-abi-version}-raspi2 
 Description: Linux kernel headers for the BCM2709 architecture.
@@ -7,7 +7,7 @@ Description: Linux kernel headers for the BCM2709 architecture.
  for ARM BCM2709 systems.
 
 Package: linux-image-raspi2
-Architecture: armhf
+Architecture: armhf arm64
 Section: kernel
 Depends: ${misc:Depends}, linux-image-${kernel-abi-version}-raspi2, linux-firmware
 Description: Linux kernel image for the BCM2709 architecture.
@@ -15,7 +15,7 @@ Description: Linux kernel image for the BCM2709 architecture.
  for ARM BCM2709 systems.
 
 Package: linux-raspi2
-Architecture: armhf
+Architecture: armhf arm64
 Section: kernel
 Depends: ${misc:Depends}, linux-image-raspi2 (= ${binary:Version}), linux-headers-raspi2 (= ${binary:Version})
 Description: Complete Linux kernel for the BCM2709 architecture.
@@ -23,7 +23,7 @@ Description: Complete Linux kernel for the BCM2709 architecture.
  for ARM BCM2709 systems.
 
 Package: linux-tools-raspi2
-Architecture: armhf
+Architecture: armhf arm64
 Section: kernel
 Depends: ${misc:Depends}, linux-tools-${kernel-abi-version}-raspi2
 Description: Linux kernel versioned Tools.
