@@ -1,3 +1,9 @@
+linux-meta-raspi2 (4.8.0.1014.17) yakkety; urgency=medium
+
+  * Bump ABI 4.8.0-1014
+
+ -- Seth Forshee <seth.forshee@canonical.com>  Tue, 11 Oct 2016 20:10:32 -0500
+
 linux-meta-raspi2 (4.8.0.1013.16) yakkety; urgency=medium
 
   * Enable the arm64 arch on Raspberry Pi (LP: #1628124)
