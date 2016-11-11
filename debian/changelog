@@ -1,3 +1,9 @@
+linux-meta-raspi2 (4.8.0.1019.22) yakkety; urgency=medium
+
+  * Bump ABI 4.8.0-1019
+
+ -- Luis Henriques <luis.henriques@canonical.com>  Fri, 11 Nov 2016 18:17:08 +0000
+
 linux-meta-raspi2 (4.8.0.1018.21) yakkety; urgency=medium
 
   * Bump ABI 4.8.0-1018
