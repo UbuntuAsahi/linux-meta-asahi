@@ -1,3 +1,14 @@
+linux-meta-raspi2 (4.8.0.1021.24) yakkety; urgency=medium
+
+  * Bump ABI 4.8.0-1021
+
+  * Miscellaneous Ubuntu changes
+    - Ubuntu-raspi2-4.8.0.1019.22
+    - fix tag prefix in update-version
+    - Merge back 'Ubuntu-raspi2-4.8.0.1020.23' security release
+
+ -- Luis Henriques <luis.henriques@canonical.com>  Wed, 07 Dec 2016 19:09:21 +0000
+
 linux-meta-raspi2 (4.8.0.1020.23) yakkety; urgency=medium
 
   * Bump ABI 4.8.0-1020
