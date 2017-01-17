@@ -1,3 +1,9 @@
+linux-meta-raspi2 (4.8.0.1023.26) yakkety; urgency=medium
+
+  * Bump ABI 4.8.0-1023
+
+ -- John Donnelly <john.donnelly@canonical.com>  Tue, 17 Jan 2017 11:41:17 -0600
+
 linux-meta-raspi2 (4.8.0.1022.25) yakkety; urgency=medium
 
   * Bump ABI 4.8.0-1022
