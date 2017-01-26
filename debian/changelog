@@ -1,3 +1,9 @@
+linux-meta-raspi2 (4.8.0.1024.27) yakkety; urgency=medium
+
+  * Bump ABI 4.8.0-1024
+
+ -- Thadeu Lima de Souza Cascardo <cascardo@canonical.com>  Thu, 26 Jan 2017 08:31:42 -0200
+
 linux-meta-raspi2 (4.8.0.1023.26) yakkety; urgency=medium
 
   * Bump ABI 4.8.0-1023
