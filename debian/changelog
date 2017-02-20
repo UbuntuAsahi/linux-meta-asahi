@@ -1,3 +1,9 @@
+linux-meta-raspi2 (4.8.0.1026.29) yakkety; urgency=medium
+
+  * Bump ABI 4.8.0-1026
+
+ -- Stefan Bader <stefan.bader@canonical.com>  Mon, 20 Feb 2017 17:08:45 +0100
+
 linux-meta-raspi2 (4.8.0.1025.28) yakkety; urgency=medium
 
   * Bump ABI 4.8.0-1025
