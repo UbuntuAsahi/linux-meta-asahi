@@ -1,4 +1,11 @@
-linux-meta-raspi2 (4.10.0.1000.1) zesty; urgency=medium
+linux-meta-raspi2 (4.10.0.1000.2) zesty; urgency=medium
+
+  * No change rebuild. 4.10.0.1000.1 was uploaded to the
+    yakkety pocket. Once that happens you have to bump the version.
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Wed, 08 Mar 2017 06:19:37 -0700
+
+linux-meta-raspi2 (4.10.0.1000.1) yakkety; urgency=medium
 
   * Bump ABI 4.10.0-1000
 
