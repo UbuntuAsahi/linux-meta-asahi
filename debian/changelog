@@ -1,3 +1,9 @@
+linux-meta-raspi2 (4.10.0.1001.3) zesty; urgency=medium
+
+  * Bump ABI 4.10.0-1001
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 17 Mar 2017 10:15:36 -0600
+
 linux-meta-raspi2 (4.10.0.1000.2) zesty; urgency=medium
 
   * No change rebuild. 4.10.0.1000.1 was uploaded to the
