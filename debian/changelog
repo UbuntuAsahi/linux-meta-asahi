@@ -1,3 +1,9 @@
+linux-meta-raspi2 (4.10.0.1004.6) zesty; urgency=medium
+
+  * Bump ABI 4.10.0-1004
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 07 Apr 2017 10:23:40 +0100
+
 linux-meta-raspi2 (4.10.0.1003.5) zesty; urgency=medium
 
   * Bump ABI 4.10.0-1003
