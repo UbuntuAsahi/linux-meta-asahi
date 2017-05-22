@@ -1,3 +1,9 @@
+linux-meta-raspi2 (4.10.0.1006.8) zesty; urgency=medium
+
+  * Bump ABI 4.10.0-1006
+
+ -- Thadeu Lima de Souza Cascardo <cascardo@canonical.com>  Mon, 22 May 2017 15:09:23 -0300
+
 linux-meta-raspi2 (4.10.0.1005.7) zesty; urgency=medium
 
   * Bump ABI 4.10.0-1005
