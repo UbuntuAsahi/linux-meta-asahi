@@ -1,3 +1,9 @@
+linux-meta-raspi2 (4.13.0.1003.1) artful; urgency=medium
+
+  * Bump ABI 4.13.0-1003
+
+ -- Seth Forshee <seth.forshee@canonical.com>  Thu, 28 Sep 2017 09:36:47 -0400
+
 linux-meta-raspi2 (4.11.0.1003.4) artful; urgency=medium
 
   * Bump ABI 4.11.0-1003
