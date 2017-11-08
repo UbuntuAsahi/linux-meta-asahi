@@ -1,3 +1,9 @@
+linux-meta-raspi2 (4.13.0.1006.4) artful; urgency=medium
+
+  * Bump ABI 4.13.0-1006
+
+ -- Khalid Elmously <khalid.elmously@canonical.com>  Wed, 08 Nov 2017 13:55:26 -0500
+
 linux-meta-raspi2 (4.13.0.1005.3) artful; urgency=medium
 
   * Bump ABI 4.13.0-1005
