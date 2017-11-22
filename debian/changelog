@@ -1,3 +1,9 @@
+linux-meta-raspi2 (4.13.0.1007.5) artful; urgency=medium
+
+  * Bump ABI 4.13.0-1007
+
+ -- Stefan Bader <stefan.bader@canonical.com>  Wed, 22 Nov 2017 11:52:01 +0100
+
 linux-meta-raspi2 (4.13.0.1006.4) artful; urgency=medium
 
   * Bump ABI 4.13.0-1006
