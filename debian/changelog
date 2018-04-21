@@ -1,3 +1,9 @@
+linux-meta-raspi2 (4.15.0.1009.7) bionic; urgency=medium
+
+  * Bump ABI 4.15.0-1009
+
+ -- Seth Forshee <seth.forshee@canonical.com>  Sat, 21 Apr 2018 18:03:00 -0500
+
 linux-meta-raspi2 (4.15.0.1008.6) bionic; urgency=medium
 
   * Bump ABI 4.15.0-1008
