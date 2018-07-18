@@ -1,3 +1,9 @@
+linux-meta-raspi2 (4.15.0.1017.15) bionic; urgency=medium
+
+  * Bump ABI 4.15.0-1017
+
+ -- Khalid Elmously <khalid.elmously@canonical.com>  Wed, 18 Jul 2018 02:15:02 +0000
+
 linux-meta-raspi2 (4.15.0.1016.14) bionic; urgency=medium
 
   * Bump ABI 4.15.0-1016
