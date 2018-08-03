@@ -1,3 +1,9 @@
+linux-meta-raspi2 (4.15.0.1019.17) bionic; urgency=medium
+
+  * Bump ABI 4.15.0-1019
+
+ -- Stefan Bader <stefan.bader@canonical.com>  Fri, 03 Aug 2018 12:31:09 +0200
+
 linux-meta-raspi2 (4.15.0.1018.16) bionic; urgency=medium
 
   * Bump ABI 4.15.0-1018
