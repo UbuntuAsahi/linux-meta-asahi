@@ -1,3 +1,9 @@
+linux-meta-raspi2 (4.18.0.1009.6) cosmic; urgency=medium
+
+  * Bump ABI 4.18.0-1009
+
+ -- Stefan Bader <stefan.bader@canonical.com>  Tue, 15 Jan 2019 16:50:21 +0100
+
 linux-meta-raspi2 (4.18.0.1008.5) cosmic; urgency=medium
 
   * Bump ABI 4.18.0-1008
