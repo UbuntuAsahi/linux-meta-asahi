@@ -1,3 +1,12 @@
+linux-meta-raspi2 (5.0.0.1005.2) disco; urgency=medium
+
+  * Bump ABI 5.0.0-1005
+
+  * Packaging resync (LP: #1786013)
+    - [Packaging] resync git-ubuntu-log
+
+ -- Seth Forshee <seth.forshee@canonical.com>  Tue, 09 Apr 2019 16:23:08 -0500
+
 linux-meta-raspi2 (5.0.0.1004.1) disco; urgency=medium
 
   * Bump ABI 5.0.0-1004
