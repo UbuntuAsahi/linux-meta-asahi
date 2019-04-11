@@ -1,3 +1,9 @@
+linux-meta-raspi2 (5.0.0.1006.3) disco; urgency=medium
+
+  * Bump ABI 5.0.0-1006
+
+ -- Thadeu Lima de Souza Cascardo <cascardo@canonical.com>  Thu, 11 Apr 2019 14:36:31 -0300
+
 linux-meta-raspi2 (5.0.0.1005.2) disco; urgency=medium
 
   * Bump ABI 5.0.0-1005
