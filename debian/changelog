@@ -1,3 +1,9 @@
+linux-meta-raspi2 (5.0.0.1008.5) disco; urgency=medium
+
+  * Bump ABI 5.0.0-1008
+
+ -- Stefan Bader <stefan.bader@canonical.com>  Tue, 07 May 2019 10:18:44 +0200
+
 linux-meta-raspi2 (5.0.0.1007.4) disco; urgency=medium
 
   * Bump ABI 5.0.0-1007
