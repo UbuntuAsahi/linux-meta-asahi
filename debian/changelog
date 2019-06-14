@@ -1,3 +1,12 @@
+linux-meta-raspi2 (5.0.0.1011.8) disco; urgency=medium
+
+  * Bump ABI 5.0.0-1011
+
+  * Is Vcs-Git line correct? (LP: #1824474)
+    - Vcs-Git: Fix raspi2 branch checkout
+
+ -- Stefan Bader <stefan.bader@canonical.com>  Fri, 14 Jun 2019 14:59:50 +0200
+
 linux-meta-raspi2 (5.0.0.1010.7) disco; urgency=medium
 
   * Bump ABI 5.0.0-1010
