@@ -1,3 +1,9 @@
+linux-meta-raspi2 (5.0.0.1013.10) disco; urgency=medium
+
+  * Bump ABI 5.0.0-1013
+
+ -- Connor Kuehl <connor.kuehl@canonical.com>  Tue, 02 Jul 2019 10:44:49 -0700
+
 linux-meta-raspi2 (5.0.0.1012.9) disco; urgency=medium
 
   * Bump ABI 5.0.0-1012
