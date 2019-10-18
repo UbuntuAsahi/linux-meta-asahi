@@ -1,3 +1,9 @@
+linux-meta-raspi2 (5.3.0.1008.4) eoan; urgency=medium
+
+  * Bump ABI 5.3.0-1008
+
+ -- Kleber Sacilotto de Souza <kleber.souza@canonical.com>  Fri, 18 Oct 2019 15:09:29 +0200
+
 linux-meta-raspi2 (5.3.0.1007.3) eoan; urgency=medium
 
   * Bump ABI 5.3.0-1007
