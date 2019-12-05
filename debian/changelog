@@ -1,3 +1,9 @@
+linux-meta-raspi2 (5.3.0.1015.12) eoan; urgency=medium
+
+  * Bump ABI 5.3.0-1015
+
+ -- Connor Kuehl <connor.kuehl@canonical.com>  Wed, 04 Dec 2019 16:47:08 -0800
+
 linux-meta-raspi2 (5.3.0.1014.11) eoan; urgency=medium
 
   * Bump ABI 5.3.0-1014
