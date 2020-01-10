@@ -1,3 +1,9 @@
+linux-meta-raspi2 (5.3.0.1016.13) eoan; urgency=medium
+
+  * Bump ABI 5.3.0-1016
+
+ -- Khalid Elmously <khalid.elmously@canonical.com>  Thu, 09 Jan 2020 19:02:18 -0500
+
 linux-meta-raspi2 (5.3.0.1015.12) eoan; urgency=medium
 
   * Bump ABI 5.3.0-1015
