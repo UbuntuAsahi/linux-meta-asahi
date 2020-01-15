@@ -1,3 +1,9 @@
+linux-meta-raspi2 (5.3.0.1017.14) eoan; urgency=medium
+
+  * Bump ABI 5.3.0-1017
+
+ -- Manoj Iyer <manoj.iyer@canonical.com>  Wed, 15 Jan 2020 15:33:05 -0600
+
 linux-meta-raspi2 (5.3.0.1016.13) eoan; urgency=medium
 
   * Bump ABI 5.3.0-1016
