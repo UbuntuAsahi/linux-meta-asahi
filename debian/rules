@@ -7,94 +7,94 @@
 # Copyright (c) 2004 Jens Schmalzing <jensen@debian.org>
 #
 
-# Pull out the source suffix, we intend to maintain an -lts-<series> suffix
-# but otherwise assume this main packages are not intended to have a suffix
-# so that linux-meta and linux-meta-ti-omap4 will behave normally, but
-# linux-meta-lts-vivid will add the series suffix.
 SERIES=$(shell dpkg-parsechangelog | sed -ne 's/^Distribution: *//p' | sed -e 's/-\(security\|updates\|proposed\)$$//')
 SOURCE=$(shell dpkg-parsechangelog | sed -ne 's/^Source: *//p')
-SUFFIX=$(shell dpkg-parsechangelog | sed -ne 's/^Source: *linux-meta-lts/-lts/p')
+KERNEL_SOURCE=$(shell echo "$(SOURCE)" | sed -e 's/-meta//')
+
+VARIANT_PROVIDES=$(shell echo "$(SOURCE)" | sed -e 's/linux-meta-//')
 
 # 5 digit versions (2.6.38.<abi>.<upload>, 3 digit kernel base versions (2.6.38)
-KERNEL_VERSION=$(shell dpkg-parsechangelog | grep ^Version | sed -e \
-	's/Version: \([0-9]*\.[0-9]*\.[0-9]*\)\..*/\1/')
-KERNEL_ABI=$(shell head -n1 < debian/changelog | gawk '{n=split($$0,v,"."); print v[4];}')
-
-# 4 digit versions (3.0.<abi>.<upload>), 2 digit kernel base versions (3.0)
-#KERNEL_VERSION=$(shell dpkg-parsechangelog | grep ^Version | sed -e \
-	's/Version: \([0-9]*\.[0-9]*\)\..*/\1/')
-#KERNEL_ABI=$(shell head -n1 < debian/changelog | gawk '{n=split($$0,v,"."); print v[3];}')
+KERNEL_VERSION=$(shell dpkg-parsechangelog -SVersion | cut -d. -f1-3)
+KERNEL_ABI=$(shell dpkg-parsechangelog -SVersion | cut -d. -f4)
 
 KERNEL_ABI_VERSION=$(KERNEL_VERSION)-$(KERNEL_ABI)
 
-GENERIC_armhf=raspi2
+# Get variants, assumng primary if debian/variants is not present
+variants = --
+ifneq (,$(wildcard debian/variants))
+	variants := $(shell cat debian/variants)
+endif
 
-GENERIC=$(value GENERIC_$(shell dpkg-architecture -qDEB_HOST_ARCH))
-GENERIC_DEP=$(if $(GENERIC),$(GENERIC),)
-
-control_files := debian/control.common $(shell LC_ALL=C ls -d debian/control.d/*)
+control_files := debian/control.common
+# control files only wanted for the primary variant
+primary_control_files := debian/control.d/primary $(shell LC_ALL=C ls -d debian/control.d/transitionals-*)
+ifneq ($(filter --,$(variants)),)
+	control_files += $(primary_control_files)
+endif
+control_files += $(filter-out $(primary_control_files),$(shell LC_ALL=C ls -d debian/control.d/*))
 
 SHELL := sh -e
-
-build:
-	dh_testdir
 
 clean: debian/control
 	dh_testdir
 	dh_testroot
 	dh_clean
 
-debian/control: $(control_files)
-	rm -f debian/control.tmp
-	for i in $^; do \
-		sed \
-			-e 's/@SERIES@/$(SERIES)/g' \
-			-e 's/@SUFFIX@/$(SUFFIX)/g' \
-			$$i >> debian/control.tmp; \
-		echo >> debian/control.tmp; \
-	done
-	rm -f $@
-	mv debian/control.tmp $@
+define variant_payload
+variant="$$(echo '$(variant)' | sed -e 's/--//')"; \
+sed -e "s/\$${variant:suffix}/$$variant/g" -e "s/\$${variant:provides\(\|-image\|-headers\)}/$${variant_provides:+linux\1-$$variant_provides}/" <$$i; \
+variant_provides=''; \
+echo "";
+endef
 
-install: build
+debian/control: $(control_files)
+	for i in $^; do \
+		if grep -q "{variant:" $$i; then \
+			variant_provides="$(VARIANT_PROVIDES)"; \
+			$(foreach variant,$(variants),$(variant_payload)) \
+		else \
+			cat $$i; \
+			echo ""; \
+		fi; \
+	done | sed \
+		-e 's/@SERIES@/$(SERIES)/g' \
+		-e 's/@kernel-abi-version@/$(KERNEL_ABI_VERSION)/g' \
+		-e 's/SRCPKGNAME/$(SOURCE)/g' \
+		-e 's/@KERNEL_SOURCE@/$(KERNEL_SOURCE)/g' \
+	    >$@.tmp
+	rm -f $@
+	mv $@.tmp $@
+
+.PHONY: debian/control
+
+gencontrol_flags = -Vkernel-version=$(KERNEL_VERSION)
+gencontrol_flags += -Vkernel-abi-version=$(KERNEL_ABI_VERSION)
+
+build-%:
+	:
+
+install-%: build-%
 	dh_testdir
 	dh_testroot
 	dh_prep
 
-gencontrol_flags = -Vkernel-version=$(KERNEL_VERSION)
-gencontrol_flags += -Vkernel-abi-version=$(KERNEL_ABI_VERSION)
-gencontrol_flags += -Vgeneric-depends=$(GENERIC_DEP)
-
-# Build architecture-independent files here.
-binary-indep: debian/control install
+binary-arch: t=-a
+binary-indep: t=-i
+binary-%: debian/control install-%
 	dh_testdir
 	dh_testroot
 
-	dh_installdirs -i
-	dh_installdocs -i
-	dh_installchangelogs -i
-	dh_compress -i
-	dh_fixperms -i
-	dh_installdeb -i
-	dh_gencontrol -i -- $(gencontrol_flags)
-	dh_md5sums -i
-	dh_builddeb -i
+	dh_installdirs $(t)
+	dh_installdocs $(t)
+	dh_installchangelogs $(t)
+	dh_compress $(t)
+	dh_fixperms $(t)
+	dh_installdeb $(t)
+	dh_gencontrol $(t) -- $(gencontrol_flags)
+	dh_md5sums $(t)
+	dh_builddeb $(t)
 
-# Build architecture-dependent files here.
-binary-arch: debian/control install
-	dh_testdir
-	dh_testroot
-
-	dh_installdirs -s
-	dh_installdocs -s
-	dh_installchangelogs -s
-	dh_compress -s
-	dh_fixperms -s
-	dh_installdeb -s
-	dh_gencontrol -s -- $(gencontrol_flags)
-	dh_md5sums -s
-	dh_builddeb -s
-
+build: build-indep build-arch
 binary: binary-indep binary-arch
 
-.PHONY: build clean binary-indep binary-arch binary install
+.PHONY: clean

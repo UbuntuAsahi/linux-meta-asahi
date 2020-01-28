@@ -1,3 +1,9 @@
+linux-meta-raspi2-5.4 (5.4.0.1000.0) focal; urgency=medium
+
+  * Dummy entry.
+
+ -- Juerg Haefliger <juergh@canonical.com>  Tue, 28 Jan 2020 16:58:05 +0100
+
 linux-meta-raspi2 (5.3.0.1017.14) eoan; urgency=medium
 
   * Bump ABI 5.3.0-1017
