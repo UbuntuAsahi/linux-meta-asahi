@@ -1,3 +1,15 @@
+linux-meta-raspi2-5.4 (5.4.0.1001.1) focal; urgency=medium
+
+  * Bump ABI 5.4.0-1001
+
+  * Packaging resync (LP: #1786013)
+    - [Packaging] update variants
+
+  * Miscellaneous Ubuntu changes
+    - Prevent errors when primary control files are not present
+
+ -- Juerg Haefliger <juergh@canonical.com>  Wed, 29 Jan 2020 12:17:43 +0100
+
 linux-meta-raspi2-5.4 (5.4.0.1000.0) focal; urgency=medium
 
   * Dummy entry.
