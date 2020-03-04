@@ -1,0 +1,30 @@
+Package: linux-headers-raspi2
+Architecture: armhf arm64
+Section: oldlibs
+Priority: optional
+Depends: linux-headers-raspi
+Description: Raspberry Pi Linux kernel headers (dummy transitional package)
+ Transitional package for upgrades from linux-raspi2 to linux-raspi.
+
+Package: linux-image-raspi2
+Architecture: armhf arm64
+Section: oldlibs
+Priority: optional
+Depends: linux-image-raspi
+Description: Raspberry Pi Linux kernel image (dummy transitional package)
+ Transitional package for upgrades from linux-raspi2 to linux-raspi.
+
+Package: linux-tools-raspi2
+Architecture: armhf arm64
+Section: oldlibs
+Depends: linux-tools-raspi
+Description: Raspberry Pi Linux kernel tools (dummy transitional package)
+ Transitional package for upgrades from linux-raspi2 to linux-raspi.
+
+Package: linux-raspi2
+Architecture: armhf arm64
+Section: oldlibs
+Priority: optional
+Depends: linux-raspi
+Description: Complete Raspberry Pi Linux kernel and headers (dummy transitional packages)
+ Transitional package for upgrades from linux-raspi2 to linux-raspi.
