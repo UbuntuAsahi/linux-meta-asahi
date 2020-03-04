@@ -1,3 +1,9 @@
+linux-meta-raspi (5.4.0.1006.6) focal; urgency=medium
+
+  * Empty entry.
+
+ -- Juerg Haefliger <juergh@canonical.com>  Tue, 17 Mar 2020 08:54:36 +0100
+
 linux-meta-raspi2 (5.4.0.1006.6) focal; urgency=medium
 
   * Bump ABI 5.4.0-1006

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-tag_prefix="Ubuntu-raspi2-"
+tag_prefix="Ubuntu-raspi-"
 
 if [ "$#" -ne 1 ]; then
 	echo "Usage: $0 <linux-source-directory>" 1>&2
