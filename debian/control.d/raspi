@@ -1,7 +1,7 @@
 Package: linux-headers-raspi${variant:suffix}
 Architecture: armhf arm64
 Section: kernel
-Depends: ${misc:Depends}, linux-headers-${kernel-abi-version}-raspi 
+Depends: ${misc:Depends}, linux-headers-${kernel-abi-version}-raspi
 Description: Raspberry Pi Linux kernel headers
  This package will always depend on the latest Raspberry Pi Linux
  kernel headers available.
@@ -25,6 +25,7 @@ Description: Raspberry Pi Linux kernel tools
 Package: linux-raspi${variant:suffix}
 Architecture: armhf arm64
 Section: kernel
+Provides: ${test:provides-full-raspi} ${test:provides-full-preferred}
 Depends: ${misc:Depends}, linux-image-raspi${variant:suffix} (= ${binary:Version}), linux-headers-raspi${variant:suffix} (= ${binary:Version})
 Description: Complete Raspberry Pi Linux kernel and headers
  This package will always depend on the latest complete Raspberry Pi Linux
