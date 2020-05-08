@@ -1,3 +1,10 @@
+linux-meta-raspi (5.4.0.1011.11) focal; urgency=medium
+
+  * Bump ABI 5.4.0-1011
+
+
+ -- Stefan Bader <stefan.bader@canonical.com>  Fri, 08 May 2020 09:28:33 +0200
+
 linux-meta-raspi (5.4.0.1010.10) focal; urgency=medium
 
   * Bump ABI 5.4.0-1010
