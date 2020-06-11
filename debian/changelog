@@ -1,3 +1,9 @@
+linux-meta-raspi (5.4.0.1013.13) focal; urgency=medium
+
+  * Bump ABI 5.4.0-1013
+
+ -- Kelsey Skunberg <kelsey.skunberg@canonical.com>  Thu, 11 Jun 2020 10:03:36 -0600
+
 linux-meta-raspi (5.4.0.1012.12) focal; urgency=medium
 
   * Bump ABI 5.4.0-1012
