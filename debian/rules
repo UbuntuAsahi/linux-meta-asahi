@@ -75,7 +75,7 @@ debian/control: $(control_files)
 
 gencontrol_flags = -Vkernel-version=$(KERNEL_VERSION)
 gencontrol_flags += -Vkernel-abi-version=$(KERNEL_ABI_VERSION)
-gencontrol_flags += -Vdkms:zfs-modules="zfs-modules (= $(dkms_zfs_linux_version)),"
+gencontrol_flags += -Vdkms:zfs-modules="zfs-modules (= $(dkms_zfs_linux_version)) [arm64],"
 gencontrol_flags += -Vdkms:virtualbox-guest-modules="virtualbox-guest-modules (= $(dkms_virtualbox_version)),"
 gencontrol_flags += -Vdkms:wireguard-linux-compat-modules="wireguard-modules (= $(dkms_wireguard_version)),"
 
