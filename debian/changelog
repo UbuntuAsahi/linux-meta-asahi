@@ -1,3 +1,9 @@
+linux-meta-raspi (5.4.0.1015.16) focal; urgency=medium
+
+  * Bump ABI 5.4.0-1015
+
+ -- Khalid Elmously <khalid.elmously@canonical.com>  Fri, 10 Jul 2020 01:27:31 -0400
+
 linux-meta-raspi (5.4.0.1014.15) focal; urgency=medium
 
   * linux-image-raspi provides zfs modules only for arm64 (LP: #1886682)
