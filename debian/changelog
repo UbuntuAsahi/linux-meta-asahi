@@ -1,4 +1,4 @@
-linux-meta-raspi (5.4.0.1015.17) focal; urgency=medium
+linux-meta-raspi (5.4.0.1015.50) focal; urgency=medium
 
   * Miscellaneous Ubuntu changes
     - [Packaging] Add transitionals for HWE kernels
