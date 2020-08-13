@@ -1,3 +1,13 @@
+linux-meta-raspi (5.4.0.1016.51) focal; urgency=medium
+
+  * Bump ABI 5.4.0-1016
+
+  * Packaging resync (LP: #1786013)
+    - [Packaging] update variants
+    - [Packaging] resync debian/dkms-versions from main package
+
+ -- William Breathitt Gray <william.gray@canonical.com>  Thu, 13 Aug 2020 11:26:51 -0400
+
 linux-meta-raspi (5.4.0.1015.50) focal; urgency=medium
 
   * Miscellaneous Ubuntu changes
