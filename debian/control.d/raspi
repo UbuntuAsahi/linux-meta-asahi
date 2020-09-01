@@ -9,7 +9,7 @@ Description: Raspberry Pi Linux kernel headers
 Package: linux-image-raspi${variant:suffix}
 Architecture: armhf arm64
 Section: kernel
-Provides: ${dkms:wireguard-linux-compat-modules} ${dkms:zfs-modules}
+Provides: ${dkms:zfs-modules}
 Depends: ${misc:Depends}, linux-image-${kernel-abi-version}-raspi, linux-firmware
 Description: Raspberry Pi Linux kernel image
  This package will always depend on the latest Raspberry Pi Linux
