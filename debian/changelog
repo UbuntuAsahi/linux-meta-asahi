@@ -1,3 +1,16 @@
+linux-meta-raspi (5.8.0.1001.3) groovy; urgency=medium
+
+  * Bump ABI 5.8.0-1001
+
+  * Packaging resync (LP: #1786013)
+    - [Packaging] resync debian/dkms-versions from main package
+
+  * Miscellaneous Ubuntu changes
+    - [Packaging] Drop the transitionals
+    - [Packaging] Drop the wireguard DKMS modules
+
+ -- Juerg Haefliger <juergh@canonical.com>  Tue, 01 Sep 2020 07:52:08 +0200
+
 linux-meta-raspi (5.8.0.1000.0) groovy; urgency=medium
 
   * Dummy entry.
