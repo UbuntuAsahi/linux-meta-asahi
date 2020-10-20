@@ -7,4 +7,5 @@ Build-Depends: dpkg (>= 1.13.19), debhelper (>= 9), gawk,
 Build-Depends-Arch:
  @KERNEL_SOURCE@-headers-@KERNEL_ABI_VERSION@,
  linux-headers-@KERNEL_ABI_VERSION@-raspi,
+ linux-modules-@KERNEL_ABI_VERSION@-raspi,
 Vcs-Git: git://git.launchpad.net/~ubuntu-kernel/ubuntu/+source/linux-meta-raspi/+git/@SERIES@

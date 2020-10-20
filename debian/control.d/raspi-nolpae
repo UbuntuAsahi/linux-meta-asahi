@@ -9,6 +9,7 @@ Description: No-LPAE Raspberry Pi Linux kernel headers
 Package: linux-image-raspi-nolpae${variant:suffix}
 Architecture: armhf
 Section: kernel
+Provides: ${dkms:wireguard-linux-compat-modules}
 Depends: ${misc:Depends}, linux-image-${kernel-abi-version}-raspi-nolpae, linux-firmware
 Description: No-LPAE Raspberry Pi Linux kernel image
  This package will always depend on the latest no-LPAE Raspberry Pi Linux
