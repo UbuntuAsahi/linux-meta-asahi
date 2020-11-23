@@ -1,3 +1,9 @@
+linux-meta-raspi (5.8.0.1006.8) hirsute; urgency=medium
+
+  * Empty entry.
+
+ -- Seth Forshee <seth.forshee@canonical.com>  Sun, 22 Nov 2020 20:59:43 -0600
+
 linux-meta-raspi (5.8.0.1006.8) groovy; urgency=medium
 
   * Bump ABI 5.8.0-1006
