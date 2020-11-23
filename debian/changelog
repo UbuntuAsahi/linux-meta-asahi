@@ -1,3 +1,12 @@
+linux-meta-raspi (5.8.0.1008.11+21.04.9) hirsute; urgency=medium
+
+  * Bump ABI 5.8.0-1008.11+21.04
+
+  * Packaging resync (LP: #1786013)
+    - [Packaging] resync debian/dkms-versions from main package
+
+ -- Seth Forshee <seth.forshee@canonical.com>  Sun, 22 Nov 2020 22:09:25 -0600
+
 linux-meta-raspi (5.8.0.1006.8) hirsute; urgency=medium
 
   * Empty entry.
