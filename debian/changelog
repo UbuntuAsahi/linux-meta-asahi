@@ -1,3 +1,9 @@
+linux-meta-raspi (5.8.0.1011.14+21.04.11) hirsute; urgency=medium
+
+  * Bump ABI 5.8.0-1011.14+21.04
+
+ -- Ian May <ian.may@canonical.com>  Tue, 15 Dec 2020 17:35:04 -0600
+
 linux-meta-raspi (5.8.0.1009.12+21.04.10) hirsute; urgency=medium
 
   * Bump ABI 5.8.0-1009.12+21.04
