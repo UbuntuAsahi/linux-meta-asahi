@@ -1,3 +1,9 @@
+linux-meta-raspi (5.11.0.1000.0) hirsute; urgency=medium
+
+  * Dummy entry.
+
+ -- Juerg Haefliger <juergh@canonical.com>  Thu, 04 Mar 2021 11:46:37 +0100
+
 linux-meta-raspi (5.8.0.1017.20+21.04.12) hirsute; urgency=medium
 
   * Bump ABI 5.8.0-1017.20+21.04
