@@ -1,3 +1,13 @@
+linux-meta-raspi (5.11.0.1003.1) hirsute; urgency=medium
+
+  * Bump ABI 5.11.0-1003
+
+  * Installing wireguard-tools pulls in the generic kernel (LP: #1900683)
+    - [Packaging] Add missing provides for wireguard
+    - [Packaging]: Add kmod to Build-Depends
+
+ -- Juerg Haefliger <juergh@canonical.com>  Thu, 04 Mar 2021 15:01:18 +0100
+
 linux-meta-raspi (5.11.0.1000.0) hirsute; urgency=medium
 
   * Dummy entry.
