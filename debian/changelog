@@ -1,3 +1,9 @@
+linux-meta-raspi (5.11.0.1006.4) hirsute; urgency=medium
+
+  * Bump ABI 5.11.0-1006
+
+ -- Seth Forshee <seth.forshee@canonical.com>  Mon, 12 Apr 2021 16:29:07 -0500
+
 linux-meta-raspi (5.11.0.1005.3) hirsute; urgency=medium
 
   * Bump ABI 5.11.0-1005
