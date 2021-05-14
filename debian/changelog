@@ -1,3 +1,12 @@
+linux-meta-raspi (5.11.0.1009.7) hirsute; urgency=medium
+
+  * Bump ABI 5.11.0-1009
+
+  * Packaging resync (LP: #1786013)
+    - [Packaging] resync debian/dkms-versions from main package
+
+ -- Stefan Bader <stefan.bader@canonical.com>  Fri, 14 May 2021 15:28:31 +0200
+
 linux-meta-raspi (5.11.0.1008.6) hirsute; urgency=medium
 
   * Bump ABI 5.11.0-1008
