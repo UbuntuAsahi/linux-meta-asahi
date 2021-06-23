@@ -15,6 +15,14 @@ Description: No-LPAE Raspberry Pi Linux kernel image
  This package will always depend on the latest no-LPAE Raspberry Pi Linux
  kernel image available.
 
+Package: linux-modules-extra-raspi-nolpae${variant:suffix}
+Architecture: armhf
+Section: kernel
+Depends: ${misc:Depends}, linux-modules-extra-${kernel-abi-version}-raspi-nolpae
+Description: No-LPAE Raspberry Pi Linux kernel extra modules
+ This package will always depend on the latest no-LPAE Raspberry Pi Linux
+ kernel extra modules package available.
+
 Package: linux-tools-raspi-nolpae${variant:suffix}
 Architecture: armhf
 Section: kernel
