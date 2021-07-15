@@ -2,8 +2,8 @@ Package: linux-headers-raspi-nolpae${variant:suffix}
 Architecture: armhf
 Section: kernel
 Depends: ${misc:Depends}, linux-headers-${kernel-abi-version}-raspi-nolpae
-Description: No-LPAE Raspberry Pi Linux kernel headers
- This package will always depend on the latest no-LPAE Raspberry Pi Linux
+Description: Raspberry Pi no-LPAE Linux kernel headers
+ This package will always depend on the latest Raspberry Pi no-LPAE Linux
  kernel headers available.
 
 Package: linux-image-raspi-nolpae${variant:suffix}
@@ -11,24 +11,24 @@ Architecture: armhf
 Section: kernel
 Provides: ${dkms:wireguard-linux-compat-modules}
 Depends: ${misc:Depends}, linux-image-${kernel-abi-version}-raspi-nolpae, linux-firmware
-Description: No-LPAE Raspberry Pi Linux kernel image
- This package will always depend on the latest no-LPAE Raspberry Pi Linux
+Description: Raspberry Pi no-LPAE Linux kernel image
+ This package will always depend on the latest Raspberry Pi no-LPAE Linux
  kernel image available.
 
 Package: linux-modules-extra-raspi-nolpae${variant:suffix}
 Architecture: armhf
 Section: kernel
 Depends: ${misc:Depends}, linux-modules-extra-${kernel-abi-version}-raspi-nolpae
-Description: No-LPAE Raspberry Pi Linux kernel extra modules
- This package will always depend on the latest no-LPAE Raspberry Pi Linux
+Description: Raspberry Pi no-LPAE Linux kernel extra modules
+ This package will always depend on the latest Raspberry Pi no-LPAE Linux
  kernel extra modules package available.
 
 Package: linux-tools-raspi-nolpae${variant:suffix}
 Architecture: armhf
 Section: kernel
 Depends: ${misc:Depends}, linux-tools-${kernel-abi-version}-raspi-nolpae
-Description: No-LPAE Raspberry Pi Linux kernel tools
- This package will always depend on the latest no-LPAE Raspberry Pi Linux
+Description: Raspberry Pi no-LPAE Linux kernel tools
+ This package will always depend on the latest Raspberry Pi no-LPAE Linux
  kernel tools available.
 
 Package: linux-raspi-nolpae${variant:suffix}
@@ -36,6 +36,6 @@ Architecture: armhf
 Section: kernel
 Provides: ${test:provides-full-raspi-nolpae}
 Depends: ${misc:Depends}, linux-image-raspi-nolpae${variant:suffix} (= ${binary:Version}), linux-headers-raspi-nolpae${variant:suffix} (= ${binary:Version})
-Description: Complete no-LPAE Raspberry Pi Linux kernel and headers
- This package will always depend on the latest complete no-LPAE Raspberry Pi Linux
+Description: Complete Raspberry Pi no-LPAE Linux kernel and headers
+ This package will always depend on the latest complete Raspberry Pi no-LPAE Linux
  kernel and headers available.
