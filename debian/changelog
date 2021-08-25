@@ -1,3 +1,9 @@
+linux-meta-raspi (5.13.0.1006.12) impish; urgency=medium
+
+  * Bump ABI 5.13.0-1006
+
+ -- Dimitri John Ledkov <dimitri.ledkov@canonical.com>  Wed, 25 Aug 2021 10:45:48 +0100
+
 linux-meta-raspi (5.13.0.1005.11) impish; urgency=medium
 
   * Bump ABI 5.13.0-1005
