@@ -1,3 +1,12 @@
+linux-meta-raspi (5.15.0.1004.4) jammy; urgency=medium
+
+  * Bump ABI 5.15.0-1004
+
+  * Packaging resync (LP: #1786013)
+    - [Packaging] resync debian/dkms-versions from main package
+
+ -- Juerg Haefliger <juergh@canonical.com>  Thu, 17 Mar 2022 15:49:08 +0100
+
 linux-meta-raspi (5.15.0.1003.3) jammy; urgency=medium
 
   * Bump ABI 5.15.0-1003
