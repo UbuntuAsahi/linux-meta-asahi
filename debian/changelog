@@ -1,3 +1,9 @@
+linux-meta-raspi (5.15.0.1018.17) jammy; urgency=medium
+
+  * Bump ABI 5.15.0-1018
+
+ -- Juerg Haefliger <juerg.haefliger@canonical.com>  Fri, 04 Nov 2022 18:50:51 +0100
+
 linux-meta-raspi (5.15.0.1017.16) jammy; urgency=medium
 
   * Bump ABI 5.15.0-1017
