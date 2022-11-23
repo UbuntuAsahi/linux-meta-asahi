@@ -1,11 +1,11 @@
 Source: @SRCPKGNAME@
 Section: devel
 Priority: optional
-Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Maintainer: Tobias Heider <me@tobhe.de>
 Standards-Version: 3.9.8
 Build-Depends: dpkg (>= 1.13.19), debhelper (>= 9), gawk, kmod,
 Build-Depends-Arch:
  @KERNEL_SOURCE@-headers-@KERNEL_ABI_VERSION@,
- linux-headers-@KERNEL_ABI_VERSION@-raspi,
- linux-modules-@KERNEL_ABI_VERSION@-raspi,
-Vcs-Git: git://git.launchpad.net/~ubuntu-kernel/ubuntu/+source/linux-meta-raspi/+git/@SERIES@
+ linux-headers-@KERNEL_ABI_VERSION@-asahi,
+ linux-modules-@KERNEL_ABI_VERSION@-asahi,
+Vcs-Git: https://github.com/tobhe/linux-meta-asahi
