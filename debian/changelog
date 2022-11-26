@@ -1,5 +1,5 @@
-linux-meta-asahi (5.19.6.11.110) jammy; urgency=medium
+linux-meta-asahi-edge (6.1.0.1.1) jammy; urgency=medium
 
-  * Bump ABI 5.19.6-11.110
+  * Track asahi-edge kernel
 
  -- Tobias Heider <me@tobhe.de>  Wed, 23 Nov 2022 14:08:10 +0100

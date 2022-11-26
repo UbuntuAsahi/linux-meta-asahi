@@ -1,0 +1,36 @@
+Package: linux-headers-asahi-edge${variant:suffix}
+Architecture: arm64
+Section: kernel
+Depends: ${misc:Depends}, linux-headers-${kernel-abi-version}-asahi-edge
+Description: Asahi Linux kernel headers
+ This package will always depend on the latest asahi-edge kernel headers
+ available.
+
+Package: linux-image-asahi-edge${variant:suffix}
+Architecture: arm64
+Section: kernel
+Provides: ${dkms:zfs-modules}
+Depends: ${misc:Depends}, linux-image-${kernel-abi-version}-asahi-edge, linux-modules-extra-${kernel-abi-version}-asahi-edge, linux-firmware
+Recommends: thermald
+Description: Asahi Linux kernel image
+ This package will always depend on the latest asahi-edge kernel image
+ available.
+
+Package: linux-tools-asahi-edge${variant:suffix}
+Architecture: arm64
+Section: kernel
+Provides: linux-tools
+Depends: ${misc:Depends}, linux-tools-${kernel-abi-version}-asahi-edge
+Description: Asahi Linux kernel tools
+ This package will always depend on the latest asahi-edge kernel tools
+ available.
+
+Package: linux-asahi-edge${variant:suffix}
+Architecture: arm64
+Section: kernel
+Provides: ${test:provides-full-asahi-edge} ${test:provides-full-preferred}
+Depends: ${misc:Depends}, linux-image-asahi-edge${variant:suffix} (= ${binary:Version}), linux-headers-asahi-edge${variant:suffix} (= ${binary:Version})
+Description: Complete Asahi Linux kernel and headers
+ This package will always depend on the latest complete asahi-edge Linux kernel
+ and headers.
+
