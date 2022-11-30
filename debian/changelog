@@ -1,5 +1,5 @@
-linux-meta-asahi-edge (6.1.0.1.1) jammy; urgency=medium
+linux-meta-asahi-edge (6.1.1.1.0) jammy; urgency=medium
 
-  * Track asahi-edge kernel
+  * Switch to asahi-edge flavor
 
  -- Tobias Heider <me@tobhe.de>  Wed, 23 Nov 2022 14:08:10 +0100
