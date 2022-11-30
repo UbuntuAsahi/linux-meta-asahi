@@ -1,3 +1,9 @@
+linux-meta-asahi (6.1.0.1.1) jammy; urgency=medium
+
+  * Bump to 6.1.0-1.1
+
+ -- Tobias Heider <me@tobhe.de>  Wed, 30 Nov 2022 15:19:48 +0100
+
 linux-meta-asahi (5.19.6.11.110) jammy; urgency=medium
 
   * Bump ABI 5.19.6-11.110
