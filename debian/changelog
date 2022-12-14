@@ -1,3 +1,15 @@
+linux-meta-asahi (6.1.0.5) kinetic; urgency=medium
+
+  * Bump to 6.1.0-5.0
+
+ -- Tobias Heider <me@tobhe.de>  Mon, 12 Dec 2022 19:47:08 +0100
+
+linux-meta-asahi (6.1.0.4) jammy; urgency=medium
+
+  * Bump to 6.1.0-4.0 asahi kernel
+
+ -- Tobias Heider <me@tobhe.de>  Mon, 12 Dec 2022 09:48:13 +0100
+
 linux-meta-asahi (6.1.0.1.1) jammy; urgency=medium
 
   * Bump to 6.1.0-1.1
