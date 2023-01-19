@@ -1,3 +1,9 @@
+linux-meta-asahi-edge (6.1.1.7.0) kinetic; urgency=medium
+
+  * Bump to 6.1.1-7
+
+ -- Tobias Heider <me@tobhe.de>  Fri, 16 Dec 2022 00:56:11 +0100
+
 linux-meta-asahi-edge (6.1.1.6.0) kinetic; urgency=medium
 
   * Bump to 6.1.1-6
