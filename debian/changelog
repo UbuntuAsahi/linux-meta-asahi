@@ -1,3 +1,9 @@
+linux-meta-asahi (6.2.0.19.19) kinetic; urgency=medium
+
+  * Bump to 6.2.0-19.19
+
+ -- Tobias Heider <me@tobhe.de>  Wed, 29 Mar 2023 13:14:15 +0200
+
 linux-meta-asahi (6.2.0.18.20) kinetic; urgency=medium
 
   * Bump to 6.2.0-18.20
