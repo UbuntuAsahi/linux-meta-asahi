@@ -1,8 +1,14 @@
+linux-meta-asahi (6.3.0.13) jammy; urgency=medium
+
+  * Bump to 6.3.0-13
+
+ -- Tobias Heider <me@tobhe.de>  Sat, 15 Jul 2023 10:48:35 +0200
+
 linux-meta-asahi (6.3.0.7) kinetic; urgency=medium
 
   * Bump to 6.3.0-7
 
- -- Tobias Heider <tobias.heider@canonical.com>  Mon, 12 Jun 2023 12:16:39 +0200
+ -- Tobias Heider <me@tobhe.de>  Mon, 12 Jun 2023 12:16:39 +0200
 
 linux-meta-asahi (6.2.0.19.19) kinetic; urgency=medium
 
